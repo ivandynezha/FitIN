@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/drawable-v24/button_rounded.xml" value="0.1195" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/drawable-v24/editext_rounded.xml" value="0.1195" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/drawable/ic_baseline_video_library_24.xml" value="0.1195" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/drawable/local_dining_black_24dp.xml" value="0.1195" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/layout/activity_home.xml" value="0.20416666666666666" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/layout/activity_landing.xml" value="0.19010416666666666" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/layout/activity_login.xml" value="0.20416666666666666" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/layout/activity_main.xml" value="0.20416666666666666" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/layout/activity_register.xml" value="0.1" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/layout/activity_splash_screen.xml" value="0.1" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/layout/editext_rounded.xml" value="0.20416666666666666" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/layout/fragment_activity_level.xml" value="0.25" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/layout/fragment_dashboard.xml" value="0.20416666666666666" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/layout/fragment_food.xml" value="0.19010416666666666" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/layout/fragment_goal.xml" value="0.20416666666666666" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/layout/fragment_personal.xml" value="0.20416666666666666" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/layout/fragment_user_detail.xml" value="0.20416666666666666" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/layout/fragment_video.xml" value="0.20416666666666666" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/menu/bottom_nav_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/menu/steps_menu.xml" value="0.20416666666666666" />
+        <entry key="..\:/My Project/FitIn/FitIN/app/src/main/res/xml/network_security_config.xml" value="0.20416666666666666" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>
