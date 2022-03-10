@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="com.fitin.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" />
+
+    <fragment
+        android:id="@+id/navigation_history"
+        android:name="com.fitin.ui.history.HistoryFragment"
+        android:label="History"
+        tools:layout="@layout/fragment_history" />
+
+    <fragment
+        android:id="@+id/navigation_workout"
+        android:name="com.fitin.ui.workout.WorkoutFragment"
+        android:label="Workout"
+        tools:layout="@layout/fragment_workout" />
+
+    <fragment
+        android:id="@+id/navigation_video"
+        android:name="com.fitin.ui.video.VideoFragment"
+        android:label="Video For You"
+        tools:layout="@layout/fragment_video" />
+
+    <fragment
+        android:id="@+id/navigation_food"
+        android:name="com.fitin.ui.food.FoodFragment"
+        android:label="Food"
+        tools:layout="@layout/fragment_food" />
+</navigation>

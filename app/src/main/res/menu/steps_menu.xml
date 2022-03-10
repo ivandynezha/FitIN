@@ -1,0 +1,14 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/personal_step"
+        android:title="Personal Information" />
+
+    <item android:id="@+id/goal_step"
+        android:title="Goal" />
+
+    <item android:id="@+id/activity_level"
+        android:title="Activity Level" />
+
+    <item android:id="@+id/user_detail"
+        android:title="User Detail" />
+</menu>

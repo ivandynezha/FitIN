@@ -1,0 +1,217 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity"
+    android:background="@color/white"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingBottom="200dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="20dp"
+                    android:text="Your Activity Level"
+                    android:textSize="16dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/linear_up_2"
+                    android:layout_below="@id/text"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/thernary"
+                        android:layout_marginBottom="10dp"
+                        android:text="How active are you?"></TextView>
+
+                    <RadioGroup
+                        android:id="@+id/activityLevelRadioGroup"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content">
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <RadioButton
+                                android:id="@+id/notVeryActiveRadio"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@null"
+                                android:checked="true"
+                                android:buttonTint="@color/primary"
+                                android:textSize="@dimen/font.size.list"
+                                android:layout_weight="0.9"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="0.1">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/common.text.activity.not_very_active"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/font.size.list"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/font.size.body"
+                                    android:text="@string/common.text.activity.not_very_active.spend_most_of_the_day_sitting"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <RadioButton
+                                android:id="@+id/lightlyActiveRadio"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@null"
+                                android:buttonTint="@color/primary"
+                                android:textSize="@dimen/font.size.list"
+                                android:layout_weight="0.9"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="0.1">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/common.text.activity.lightly_active"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/font.size.list"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/font.size.body"
+                                    android:text="@string/common.text.activity.lightly_active.spend_a_good_part_of_the_day_on_your_feet"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <RadioButton
+                                android:id="@+id/activeRadio"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@null"
+                                android:buttonTint="@color/primary"
+                                android:textSize="@dimen/font.size.list"
+                                android:layout_weight="0.9"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="0.1">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/common.text.activity.active"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/font.size.list"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/font.size.body"
+                                    android:text="@string/common.text.activity.active.spend_a_good_part_of_the_day_doing_some_physical_activity"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:orientation="horizontal"
+                            android:weightSum="1">
+
+                            <RadioButton
+                                android:id="@+id/veryActiveRadio"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:text="@null"
+                                android:buttonTint="@color/primary"
+                                android:textSize="@dimen/font.size.list"
+                                android:layout_weight="0.9"/>
+
+                            <LinearLayout
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent"
+                                android:orientation="vertical"
+                                android:layout_weight="0.1">
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:text="@string/common.text.activity.very_active"
+                                    android:textColor="@color/black"
+                                    android:textSize="@dimen/font.size.list"/>
+                                <TextView
+                                    android:layout_width="match_parent"
+                                    android:layout_height="wrap_content"
+                                    android:textSize="@dimen/font.size.body"
+                                    android:text="@string/common.text.activity.very_active.spend_a_good_part_of_the_day_doing_heavy_physical_activity"/>
+                            </LinearLayout>
+                        </LinearLayout>
+
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+            </RelativeLayout>
+
+
+
+        </ScrollView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

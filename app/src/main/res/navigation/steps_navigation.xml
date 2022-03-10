@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_stepper"
+    app:startDestination="@id/personal_step">
+
+    <fragment
+        android:id="@+id/personal_step"
+        android:name="com.fitin.ui.register.PersonalFragment"
+        android:label="Personal Information"
+        tools:layout="@layout/fragment_personal" />
+
+    <fragment
+        android:id="@+id/goal_step"
+        android:name="com.fitin.ui.register.GoalFragment"
+        android:label="Goal"
+        tools:layout="@layout/fragment_goal"/>
+
+    <fragment
+        android:id="@+id/activity_level"
+        android:name="com.fitin.ui.register.ActivityLevelFragment"
+        android:label="Activity Level"
+        tools:layout="@layout/fragment_activity_level"/>
+
+    <fragment
+        android:id="@+id/user_detail"
+        android:name="com.fitin.ui.register.UserDetailFragment"
+        android:label="User Detail"
+        tools:layout="@layout/fragment_user_detail"/>
+
+</navigation>

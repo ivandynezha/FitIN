@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item
+        android:id="@+id/navigation_home"
+        android:icon="@drawable/ic_home_black_24dp"
+        android:title="@string/title_home" />
+
+    <item
+        android:id="@+id/navigation_history"
+        android:icon="@drawable/history_black_24dp"
+        android:title="History" />
+
+    <item
+        android:id="@+id/navigation_workout"
+        android:icon="@drawable/add_black_24dp"
+        android:title="Workout" />
+    <item
+        android:id="@+id/navigation_video"
+        android:icon="@drawable/ic_baseline_video_library_24"
+        android:title="Video" />
+    <item
+        android:id="@+id/navigation_food"
+        android:icon="@drawable/local_dining_black_24dp"
+        android:title="Food" />
+
+</menu>

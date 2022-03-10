@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity"
+    android:background="@color/white"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_alignParentTop="true"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingBottom="200dp"
+                android:layout_marginTop="100dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_height="wrap_content">
+
+                <TextView
+                    android:id="@+id/text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginBottom="20dp"
+                    android:text="Your Body Goal"
+                    android:textSize="16dp"
+                    android:textStyle="bold">
+
+                </TextView>
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="vertical"
+                    android:id="@+id/linear_up_2"
+                    android:layout_below="@id/text"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/thernary"
+                        android:text="What Is Your Body Goal?"></TextView>
+
+
+
+                    <RadioGroup
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+                        <RadioButton
+                            android:id="@+id/loss"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Loss Weight"
+                            android:checked="true"
+                            android:buttonTint="@color/primary"/>
+
+                        <RadioButton
+                            android:id="@+id/maintain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Maintain Weight"
+                            android:buttonTint="@color/primary" />
+                        <RadioButton
+                            android:id="@+id/gain"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:text="Gain Weight"
+                            android:buttonTint="@color/primary" />
+                    </RadioGroup>
+
+
+                </LinearLayout>
+
+
+
+            </RelativeLayout>
+
+
+
+        </ScrollView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
