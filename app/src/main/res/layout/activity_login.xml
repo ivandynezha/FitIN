@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.login.LoginActivity"
+    android:background="@color/white"
+    >
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ScrollView
+            android:id="@+id/scroll"
+            android:layout_width="match_parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintLeft_toRightOf="parent"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            android:layout_alignParentTop="true"
+            android:paddingBottom="20dp"
+            android:layout_height="match_parent">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:paddingTop="10dp"
+                android:paddingLeft="30dp"
+                android:paddingRight="30dp"
+
+                android:layout_height="match_parent">
+
+                <ImageView
+                    android:id="@+id/logo"
+                    android:layout_width="157dp"
+                    android:layout_height="218dp"
+                    android:layout_alignParentTop="true"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="20dp"
+                    app:srcCompat="@drawable/fitin_logos_black" />
+
+
+                <LinearLayout
+                    android:id="@+id/linear_up_1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/logo"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Your Username"
+                        android:textColor="@color/thernary"></TextView>
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/linear_up"
+                    android:layout_below="@id/linear_up_1"
+                    android:layout_height="wrap_content">
+                    <com.google.android.material.textfield.TextInputLayout
+                        android:id="@+id/emailWrapper"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:theme="@style/TextLabel">
+                        <EditText
+                            android:background="@drawable/editext_rounded"
+                            android:id="@+id/email"
+                            android:layout_width="match_parent"
+                            android:hint="Username"
+                            android:drawablePadding="5dp"
+                            android:textColor="@color/thernary"
+                            android:layout_marginTop="10dp"
+                            android:textSize="18dp"
+                            android:paddingTop="20dp"
+                            android:inputType="text"
+                            android:layout_height="58dp"></EditText>
+                    </com.google.android.material.textfield.TextInputLayout>
+
+                </LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:orientation="horizontal"
+                    android:id="@+id/linear_up_2"
+                    android:layout_below="@id/linear_up"
+                    android:layout_marginTop="20dp"
+                    android:layout_height="wrap_content">
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textColor="@color/thernary"
+                        android:text="Your Password"></TextView>
+                </LinearLayout>
+                <com.google.android.material.textfield.TextInputLayout
+                    android:id="@+id/passwordWrapper"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_below="@+id/linear_up_2"
+                    android:theme="@style/TextLabel">
+
+                    <EditText
+                        android:background="@drawable/editext_rounded"
+                        android:id="@+id/password"
+                        android:layout_width="match_parent"
+                        android:layout_height="58dp"
+                        android:hint="Password"
+                        android:textSize="18dp"
+
+                        android:layout_marginTop="10dp"
+                        android:drawablePadding="5dp"
+                        android:paddingTop="20dp"
+                        android:textColor="@color/thernary"
+                        android:inputType="textPassword">
+
+                    </EditText>
+                </com.google.android.material.textfield.TextInputLayout>
+
+                <Button
+                    android:id="@+id/login"
+                    android:layout_width="match_parent"
+                    android:layout_height="48dp"
+                    android:layout_below="@+id/passwordWrapper"
+                    android:layout_marginTop="10dp"
+                    android:background="@drawable/button_rounded"
+                    android:text="Sign In"
+                    android:textColor="@color/white"
+                    android:textSize="24dp">
+
+                </Button>
+
+
+
+            </RelativeLayout>
+
+
+
+        </ScrollView>
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
