@@ -1,0 +1,54 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bottom_sheet_bg"
+    android:orientation="vertical">
+
+
+    <LinearLayout
+        android:id="@+id/remove"
+        android:layout_width="match_parent"
+        android:background="?android:selectableItemBackground"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        android:focusable="true"
+        android:orientation="horizontal"
+        android:gravity="center_vertical"
+        android:padding="12dp">
+        <ImageView
+
+            android:src="@drawable/ic_baseline_delete_forever_24"
+            android:layout_width="30dp"
+            android:layout_height="30dp"/>
+
+        <TextView
+
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginLeft="25dp"
+            android:text="Remove Template"
+            android:textSize="15sp"
+            android:textColor="#00000F"
+            />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/btn_start"
+        android:textSize="16sp"
+        android:textColor="@android:color/white"
+        android:text="Start Workout"
+        android:textStyle="bold"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_width="match_parent"
+        android:layout_marginEnd="20dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="15dp"/>
+
+
+</LinearLayout>
