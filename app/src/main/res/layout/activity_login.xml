@@ -51,7 +51,7 @@
                     <TextView
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:text="Your Username"
+                        android:text="Your Email"
                         android:textColor="@color/thernary"></TextView>
                 </LinearLayout>
                 <LinearLayout
@@ -70,13 +70,13 @@
                             android:background="@drawable/editext_rounded"
                             android:id="@+id/email"
                             android:layout_width="match_parent"
-                            android:hint="Username"
+                            android:hint="Email"
                             android:drawablePadding="5dp"
                             android:textColor="@color/thernary"
                             android:layout_marginTop="10dp"
                             android:textSize="18dp"
                             android:paddingTop="20dp"
-                            android:inputType="text"
+                            android:inputType="textEmailAddress"
                             android:layout_height="58dp"></EditText>
                     </com.google.android.material.textfield.TextInputLayout>
 
