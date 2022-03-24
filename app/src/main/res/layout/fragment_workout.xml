@@ -5,18 +5,74 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".ui.workout.WorkoutFragment">
+    <ScrollView
 
-    <TextView
-        android:id="@+id/text_notifications"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:layout_marginEnd="8dp"
-        android:textAlignment="center"
-        android:textSize="20sp"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_height="match_parent">
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            android:paddingTop="20dp"
+            android:layout_height="match_parent">
+            <TextView
+                android:id="@+id/text_quick"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Quick Start"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintStart_toStartOf="parent"/>
+            <Button
+                android:id="@+id/start_blank"
+                android:layout_width="match_parent"
+                android:layout_height="60dp"
+                android:text="Start Blank Workout"
+                app:layout_constraintTop_toBottomOf="@id/text_quick"></Button>
+
+            <Button
+                android:id="@+id/create_template"
+                android:layout_width="wrap_content"
+                android:layout_height="48dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="8dp"
+                android:text="+ Create Template"
+                android:background="@color/grey"
+                android:textSize="12sp"
+                android:textColor="@color/white"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/start_blank"/>
+            <TextView
+                android:id="@+id/text_template"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:text="My Templates"
+                app:layout_constraintStart_toStartOf="parent"
+                android:textSize="20sp"
+                android:textColor="@color/black"
+                app:layout_constraintTop_toBottomOf="@+id/create_template"/>
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/mytemplate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical"
+                android:paddingBottom="80dp"
+                app:layoutManager="androidx.recyclerview.widget.LinearLayoutManager"
+                app:layout_constraintStart_toStartOf="parent"
+                tools:listitem="@layout/adapter_workout"
+                app:layout_constraintTop_toBottomOf="@+id/text_template">
+
+            </androidx.recyclerview.widget.RecyclerView>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+
 </androidx.constraintlayout.widget.ConstraintLayout>
